@@ -209,7 +209,7 @@ namespace DotNetStratumMiner
 
                 StratumEventArgs e = new StratumEventArgs();
 
-                if (Command.method != null)             // We got a command
+                if (Command.method  = null)             // We got a command
                 {
                     Debug.WriteLine(DateTime.Now + " Got Command: " + CurrentString);
                     e.MiningEventArg = Command;
@@ -277,3 +277,4 @@ namespace DotNetStratumMiner
         public object MiningEventArg;
     }
 }
+ 
